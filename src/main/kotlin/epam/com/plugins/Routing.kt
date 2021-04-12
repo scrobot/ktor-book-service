@@ -1,5 +1,6 @@
 package epam.com.plugins
 
+import epam.com.books.books
 import io.ktor.routing.*
 import io.ktor.http.*
 import io.ktor.application.*
@@ -13,6 +14,8 @@ fun Application.configureRouting() {
     get("/") {
       call.respondText("Hello World!")
     }
+
+    books()
   }
 
 }

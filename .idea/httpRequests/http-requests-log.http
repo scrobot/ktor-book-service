@@ -1,0 +1,31 @@
+GET http://localhost:8080/books/all
+Accept: application/json
+
+<> 2021-04-12T115508.200.json
+
+###
+
+GET http://localhost:8080/books/all
+Accept: application/json
+
+<> 2021-04-12T115503.200.json
+
+###
+
+GET http://localhost:8080/books/all
+Accept: application/json
+
+###
+
+GET http://localhost:8080/books/all
+Accept: application/json
+
+###
+
+GET http://localhost:8080
+Accept: application/json
+
+<> 2021-04-12T115107.200.txt
+
+###
+

@@ -1,10 +1,15 @@
 package epam.com.plugins
 
-import com.github.uharaqo.hocon.mapper.load
-import com.typesafe.config.ConfigFactory
+import epam.com.books.data.models.Authors
+import epam.com.books.data.models.Books
+import epam.com.books.data.models.Genres
 import epam.com.config.Datasource
 import io.ktor.application.*
 import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.sql.SchemaUtils
+import org.jetbrains.exposed.sql.StdOutSqlLogger
+import org.jetbrains.exposed.sql.addLogger
+import org.jetbrains.exposed.sql.transactions.transaction
 
 /**
  *
@@ -22,6 +27,15 @@ fun Application.configurePersistenceLayer() {
     )
   }
 
-  Database.connect(data.toJdbcString(), driver = "org.postgresql.Driver",
-    user = data.username, password = data.password)
+  Database.connect(
+    data.toJdbcString(), driver = "org.postgresql.Driver",
+    user = data.username, password = data.password
+  )
+
+  transaction {
+    // print sql to std-out
+    addLogger(StdOutSqlLogger)
+
+    SchemaUtils.create(Books, Authors, Genres)
+  }
 }

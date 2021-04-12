@@ -1,5 +1,6 @@
 package epam.com.plugins
 
+import epam.com.books.di.bookModule
 import io.ktor.application.*
 import org.koin.ktor.ext.Koin
 
@@ -11,6 +12,6 @@ import org.koin.ktor.ext.Koin
 
 fun Application.configureDI() {
   install(Koin) {
-//    modules(helloAppModule)
+    modules(bookModule)
   }
 }
