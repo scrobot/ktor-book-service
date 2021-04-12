@@ -1,8 +1,8 @@
 package epam.com.plugins
 
-import epam.com.books.data.models.Authors
-import epam.com.books.data.models.Books
-import epam.com.books.data.models.Genres
+import epam.com.authors.data.Authors
+import epam.com.books.data.Books
+import epam.com.genres.data.Genres
 import epam.com.config.Datasource
 import io.ktor.application.*
 import org.jetbrains.exposed.sql.Database

@@ -12,6 +12,7 @@ plugins {
   application
   kotlin("jvm") version "1.4.32"
   kotlin("plugin.serialization") version "1.4.32"
+  kotlin("kapt") version "1.4.32"
 }
 
 group = "epam.com"
@@ -36,6 +37,8 @@ dependencies {
   implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
   implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
   implementation("org.postgresql:postgresql:42.2.2")
+  implementation("org.mapstruct:mapstruct:1.4.2.Final")
+  kapt("org.mapstruct:mapstruct-processor:1.4.2.Final")
   testImplementation("io.ktor:ktor-server-tests:$ktor_version")
   implementation(kotlin("stdlib-jdk8"))
 }

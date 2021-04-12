@@ -1,8 +1,7 @@
-package epam.com.books.data.repositories
+package epam.com.books.data
 
-import epam.com.books.data.models.Author
-import epam.com.books.data.models.Book
-import epam.com.books.data.models.Genre
+import epam.com.authors.data.Author
+import epam.com.genres.data.Genre
 import epam.com.books.domain.BookCreateRequest
 import org.jetbrains.exposed.sql.SizedCollection
 

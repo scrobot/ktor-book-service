@@ -1,4 +1,4 @@
-package epam.com.books.domain
+package epam.com.genres.domain
 
 /**
  *
@@ -7,5 +7,5 @@ package epam.com.books.domain
  */
 data class GenreCreateRequest(
   val name: String,
-  val parentId: Int
+  val parentId: Int?
 )

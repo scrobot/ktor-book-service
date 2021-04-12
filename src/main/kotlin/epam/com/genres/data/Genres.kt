@@ -1,5 +1,7 @@
-package epam.com.books.data.models
+package epam.com.genres.data
 
+import epam.com.books.data.Book
+import epam.com.books.data.Books
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID

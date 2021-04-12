@@ -1,11 +1,11 @@
-package epam.com.books.domain
+package epam.com.authors.domain.models
 
 /**
  *
  *
  * @author Aleksei Scrobot
  */
-data class AuthorCreateRequest(
+data class AuthorPayload(
   val name: String,
   val lastName: String,
   val middleName: String? = null

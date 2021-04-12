@@ -1,6 +1,8 @@
 package epam.com.plugins
 
+import epam.com.authors.authors
 import epam.com.books.books
+import epam.com.genres.genres
 import io.ktor.routing.*
 import io.ktor.http.*
 import io.ktor.application.*
@@ -16,6 +18,8 @@ fun Application.configureRouting() {
     }
 
     books()
+    authors()
+    genres()
   }
 
 }

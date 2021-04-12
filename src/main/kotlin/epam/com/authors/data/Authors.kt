@@ -1,5 +1,7 @@
-package epam.com.books.data.models
+package epam.com.authors.data
 
+import epam.com.books.data.Book
+import epam.com.books.data.Books
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID
@@ -28,6 +30,11 @@ class Author(id: EntityID<Int>) : IntEntity(id) {
   var middleName by Authors.middleName
 
   val books by Book via AuthorBook
+
+  override fun toString(): String {
+    return "Author(name='$name', lastName='$lastName', middleName=$middleName)"
+  }
+
 }
 
 object AuthorBook : Table() {

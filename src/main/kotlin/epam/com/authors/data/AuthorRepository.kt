@@ -1,7 +1,6 @@
-package epam.com.books.data.repositories
+package epam.com.authors.data
 
-import epam.com.books.data.models.Author
-import epam.com.books.domain.AuthorCreateRequest
+import epam.com.authors.domain.models.AuthorPayload
 
 /**
  *
@@ -9,14 +8,14 @@ import epam.com.books.domain.AuthorCreateRequest
  * @author Aleksei Scrobot
  */
 interface AuthorRepository {
-  fun createAuthor(request: AuthorCreateRequest): Author
+  fun createAuthor(request: AuthorPayload): Author
   fun find(id: Int): Author?
   fun findByIds(id: List<Int>): List<Author>
 }
 
 class AuthorDao: AuthorRepository {
 
-  override fun createAuthor(request: AuthorCreateRequest) = Author.new {
+  override fun createAuthor(request: AuthorPayload) = Author.new {
     name = request.name
     lastName = request.lastName
     middleName = request.middleName

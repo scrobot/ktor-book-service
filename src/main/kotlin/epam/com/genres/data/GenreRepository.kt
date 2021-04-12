@@ -1,7 +1,6 @@
-package epam.com.books.data.repositories
+package epam.com.genres.data
 
-import epam.com.books.data.models.Genre
-import epam.com.books.domain.GenreCreateRequest
+import epam.com.genres.domain.GenreCreateRequest
 
 /**
  *
@@ -18,7 +17,7 @@ class GenreDao : GenreRepository {
 
   override fun createGenre(request: GenreCreateRequest) = Genre.new {
     name = request.name
-    parent = find(request.parentId)
+    parent = request.parentId?.let(::find)
   }
 
   override fun find(id: Int) = Genre.findById(id)

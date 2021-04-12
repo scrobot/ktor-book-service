@@ -1,3 +1,177 @@
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+<> 2021-04-12T165157.200.json
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+<> 2021-04-12T162213.200.txt
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+<> 2021-04-12T161850.200.txt
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/genres
+Content-Type: application/json
+
+{
+  "name": "Триллер",
+  "parent_id": 1
+}
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "book": {
+    "name": "Тест1",
+    "isbn": "11111-1111",
+    "rating": 5.0,
+    "annotation": "тратататата",
+    "isBestseller": true,
+    "preview": "http://example.com",
+    "value": 480
+  },
+  "genres": [2,3],
+  "authors": [1]
+}
+
+###
+
+POST http://localhost:8080/genres
+Content-Type: application/json
+
+{
+  "name": "Триллер",
+  "parent_id": 1
+}
+
+###
+
+POST http://localhost:8080/genres
+Content-Type: application/json
+
+{
+  "name": "Детектив",
+  "parent_id": 1
+}
+
+###
+
+POST http://localhost:8080/genres
+Content-Type: application/json
+
+{
+  "name": "Проза"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Александр",
+  "last_name": "Пушкин",
+  "middle_name": "Сергеевич"
+}
+
+###
+
 GET http://localhost:8080/books/all
 Accept: application/json
 
