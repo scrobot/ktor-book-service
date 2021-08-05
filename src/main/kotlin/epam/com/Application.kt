@@ -14,21 +14,3 @@ fun Application.module(testing: Boolean = false) {
   configureAdministration()
   configureDI()
 }
-
-//fun main() {
-//
-//  embeddedServer(CIO, environment = applicationEngineEnvironment {
-//    log = LoggerFactory.getLogger("ktor.application")
-//    config = HoconApplicationConfig(ConfigFactory.load())
-//
-//    module {
-//      starter(false)
-//    }
-//
-////    connector {
-////      port = 8080
-////      host = "127.0.0.1"
-////    }
-//  }).start(true)
-//
-//}
